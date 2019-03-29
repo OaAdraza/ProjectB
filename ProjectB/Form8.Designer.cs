@@ -34,7 +34,7 @@
             this.txtDetail = new System.Windows.Forms.TextBox();
             this.clocmbox = new System.Windows.Forms.ComboBox();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRubricDetail = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
@@ -96,16 +96,16 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnRubricDetail
             // 
-            this.button2.BackColor = System.Drawing.Color.Azure;
-            this.button2.Location = new System.Drawing.Point(180, 355);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 34);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "View Detail";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnRubricDetail.BackColor = System.Drawing.Color.Azure;
+            this.btnRubricDetail.Location = new System.Drawing.Point(180, 355);
+            this.btnRubricDetail.Name = "btnRubricDetail";
+            this.btnRubricDetail.Size = new System.Drawing.Size(172, 34);
+            this.btnRubricDetail.TabIndex = 7;
+            this.btnRubricDetail.Text = "View Detail";
+            this.btnRubricDetail.UseVisualStyleBackColor = false;
+            this.btnRubricDetail.Click += new System.EventHandler(this.button2_Click);
             // 
             // linkLabel1
             // 
@@ -127,7 +127,7 @@
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(462, 450);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnRubricDetail);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.clocmbox);
             this.Controls.Add(this.txtDetail);
@@ -150,7 +150,7 @@
         private System.Windows.Forms.TextBox txtDetail;
         private System.Windows.Forms.ComboBox clocmbox;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRubricDetail;
         private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

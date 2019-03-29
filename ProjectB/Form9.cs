@@ -37,7 +37,7 @@ namespace ProjectB
 
                 da.Fill(ds, "ss");
 
-                dataGridView1.DataSource = ds.Tables["ss"];
+                dgRubricsDetail.DataSource = ds.Tables["ss"];
 
             }
 
@@ -62,7 +62,7 @@ namespace ProjectB
             SqlConnection con = new SqlConnection(conn);
             con.Open();
 
-            int id = int.Parse(dataGridView1.Rows[row].Cells[0].Value.ToString());
+            int id = int.Parse(dgRubricsDetail.Rows[row].Cells[0].Value.ToString());
 
             SqlCommand command = new SqlCommand("delete from Rubric where Id = '" + id + "'", con);
             command.ExecuteNonQuery();
@@ -77,7 +77,7 @@ namespace ProjectB
             SqlConnection con = new SqlConnection(conn);
             con.Open();
 
-            int id = int.Parse(dataGridView1.Rows[row].Cells[0].Value.ToString());
+            int id = int.Parse(dgRubricsDetail.Rows[row].Cells[0].Value.ToString());
             Form10 frm10 = new Form10(id);
             this.Hide();
             frm10.Show();

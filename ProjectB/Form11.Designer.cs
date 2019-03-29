@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnAttendanceDetail = new System.Windows.Forms.Button();
+            this.cmbRegNo = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -42,30 +42,33 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.DarkCyan;
             this.btnAdd.Location = new System.Drawing.Point(226, 238);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(216, 31);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.Add_Click);
             // 
-            // button2
+            // btnAttendanceDetail
             // 
-            this.button2.Location = new System.Drawing.Point(226, 305);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(216, 31);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Show Detail";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAttendanceDetail.BackColor = System.Drawing.Color.LightCyan;
+            this.btnAttendanceDetail.Location = new System.Drawing.Point(226, 305);
+            this.btnAttendanceDetail.Name = "btnAttendanceDetail";
+            this.btnAttendanceDetail.Size = new System.Drawing.Size(216, 31);
+            this.btnAttendanceDetail.TabIndex = 2;
+            this.btnAttendanceDetail.Text = "Show Detail";
+            this.btnAttendanceDetail.UseVisualStyleBackColor = false;
+            this.btnAttendanceDetail.Click += new System.EventHandler(this.button2_Click);
             // 
-            // comboBox1
+            // cmbRegNo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(226, 102);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(216, 21);
-            this.comboBox1.TabIndex = 3;
+            this.cmbRegNo.FormattingEnabled = true;
+            this.cmbRegNo.Location = new System.Drawing.Point(226, 102);
+            this.cmbRegNo.Name = "cmbRegNo";
+            this.cmbRegNo.Size = new System.Drawing.Size(216, 21);
+            this.cmbRegNo.TabIndex = 3;
             // 
             // checkBox1
             // 
@@ -144,6 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(561, 371);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
@@ -152,8 +156,8 @@
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.cmbRegNo);
+            this.Controls.Add(this.btnAttendanceDetail);
             this.Controls.Add(this.btnAdd);
             this.Name = "Form11";
             this.Text = "Form11";
@@ -165,8 +169,8 @@
 
         #endregion
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnAttendanceDetail;
+        private System.Windows.Forms.ComboBox cmbRegNo;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;

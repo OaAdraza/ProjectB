@@ -104,5 +104,10 @@ namespace ProjectB
             this.Hide();
             f.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

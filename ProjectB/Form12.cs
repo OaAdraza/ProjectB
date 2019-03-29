@@ -64,5 +64,12 @@ namespace ProjectB
             this.Hide();
             f.Show();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form13 f = new Form13();
+            this.Hide();
+            f.Show();
+        }
     }
 }

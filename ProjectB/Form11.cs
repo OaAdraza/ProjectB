@@ -41,9 +41,9 @@ namespace ProjectB
             tbl.Columns.Add("Name", typeof(string));
             tbl.Columns.Add("Id", typeof(string));
             tbl.Load(reader);
-            comboBox1.DisplayMember = "RegistrationNumber";
-            comboBox1.DataSource = tbl;
-            comboBox1.Text = "select here Registration Number";
+            cmbRegNo.DisplayMember = "RegistrationNumber";
+            cmbRegNo.DataSource = tbl;
+            cmbRegNo.Text = "select here Registration Number";
         }
         string status;
         private void Add_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace ProjectB
 
             SqlConnection con = new SqlConnection(conn);
             con.Open();
-            string id = "Select * from student where RegistrationNumber='" + comboBox1.Text.ToString() + "'";
+            string id = "Select * from student where RegistrationNumber='" + cmbRegNo.Text.ToString() + "'";
             SqlCommand cmd = new SqlCommand(id, con);
             var r = cmd.ExecuteReader();
             r.Read();
@@ -89,6 +89,13 @@ namespace ProjectB
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form1 f = new Form1();
+            this.Hide();
+            f.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form13 f = new Form13();
             this.Hide();
             f.Show();
         }

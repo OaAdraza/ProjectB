@@ -57,6 +57,7 @@
             this.label1.Size = new System.Drawing.Size(217, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Student Information";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 

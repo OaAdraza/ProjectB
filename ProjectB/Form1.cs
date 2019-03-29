@@ -48,5 +48,26 @@ namespace ProjectB
             frm11.Show();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form15 frm11 = new Form15();
+            this.Hide();
+            frm11.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form18 frm11 = new Form18();
+            this.Hide();
+            frm11.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form24 frm11 = new Form24();
+            this.Hide();
+            frm11.Show();
+        }
     }
 }
